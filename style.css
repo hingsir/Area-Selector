@@ -1,0 +1,85 @@
+*{
+    margin : 0;
+    padding: 0;
+}
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+
+.area-main{
+    border : 1px solid #e4393c;
+    padding: 10px;
+    width : 400px;
+    font-size: 12px;
+    position: relative;
+    background-color: #fff;
+}
+.area-main .area-close-btn{
+    display: inline-block;
+    cursor: pointer;
+    font-family: "宋体";
+    font-weight: bold;
+    background-color: #e5e5e5;
+    padding: 1px;
+    position: absolute;
+    right : 10px;
+    top : 8px;
+    width:13px;
+    height: 13px;
+    line-height: 13px;
+}
+.area-main .area-header{
+    border-bottom : 1px solid #e4393c;
+}
+.area-main .area-header .area-titles{
+    margin: 5px 0 0;
+    height: 20px;
+}
+.area-main .area-header s{
+    border-color: #606060 transparent transparent;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    display: inline-block;
+    height: 0;
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+}
+.area-main .area-header .area-title{
+    list-style: none;
+    float: left;
+    padding : 2px 2px 2px 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-top: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    height: 15px;
+    line-height: 15px;
+    background-color: #fff;
+}
+.area-main .area-header .area-title-selected{
+    border-top: 1px solid #e4393c;
+    border-right: 1px solid #e4393c;
+    border-left: 1px solid #e4393c;
+    height: 16px;
+    line-height: 16px;
+}
+
+.area-main .area-body .area-list{
+    margin: 5px 0 0;
+}
+.area-main .area-body .area-list .area-item{
+    list-style: none;
+    float: left;
+    line-height: 18px;
+    padding : 0 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+.area-main .area-body .area-list .area-item-selected{
+    background-color: #FF6666;
+    color: #fff;
+    border: 1px solid #e4393c;
+}

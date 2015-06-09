@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../jquery/jquery-1.10.2.js"></script>
+    <script src="area-selector.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+    <div class="aaa bbb">
+        <h3>未指定默认地址</h3>
+        <div id = 'container' style="margin: 20px"></div>
+    </div>
+    <div>
+        <h3>默认省份</h3>
+        <div id = 'container2' style="margin: 20px"></div>
+    </div>
+    <div>
+        <h3>默认城市</h3>
+        <div id = 'container3' style="margin: 20px"></div>
+    </div>
+    <div>
+        <h3>默认区县</h3>
+        <div id = 'container4' style="margin: 20px"></div>
+    </div>
+
+    <script>
+        $('#container').areaSelector(
+            function(areas){
+                $('#container').hide()
+                alert(JSON.stringify(areas))
+            }
+        ).show()
+
+        $('#container2').areaSelector({
+            selectCompleted : function(areas){
+                $('#container2').hide()
+                alert(JSON.stringify(areas))
+            },
+            defaultArea : '440000'
+        }).show()
+        $('#container3').areaSelector({
+            selectCompleted : function(areas){
+                $('#container3').hide()
+                alert(JSON.stringify(areas))
+            },
+            defaultArea : '440400'
+        }).show()
+        $('#container4').areaSelector({
+            selectCompleted : function(areas){
+                $('#container4').hide()
+                alert(JSON.stringify(areas))
+            },
+            defaultArea : '440402'
+        }).show()
+    </script>
+</body>
+</html>
