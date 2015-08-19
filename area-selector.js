@@ -2,7 +2,7 @@
 
     var data;
     $.ajax({
-        url: '/libs/plugins/Area-Selector-plugin-1.0/district.xml',
+        url: 'district.xml',
         //url: 'district.xml',
         async: false,
         success: function (resp) {
