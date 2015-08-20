@@ -1,5 +1,17 @@
 (function ($) {
 
+    if(!Array.prototype.contains){
+        Array.prototype.contains = function(item){
+            var self = this
+            for(var i = 0;i<self.length;i++){
+                if(self[i] == item){
+                    return true
+                }
+            }
+            return false
+        }
+    }
+
     var data;
     $.ajax({
         url: 'district.xml',
